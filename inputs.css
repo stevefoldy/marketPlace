@@ -19,3 +19,18 @@
 .input-group {
     box-shadow: var(--p-card-shadow,0 0 0 1px rgba(63,63,68,.05),0 1px 3px 0 rgba(63,63,68,.15));
 }
+
+.invalid-feedback {
+    position: absolute;
+    margin: 0;
+    top: calc(50% - 10px);
+    padding: 0 50px;
+    text-align: right;
+    width: auto;
+    right: 0;
+}
+
+.was-validated textarea.form-control:invalid,
+textarea.form-control.is-invalid {
+    background-position: top calc(50%) right calc(.375em + .1875rem);
+}
