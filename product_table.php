@@ -1,9 +1,5 @@
 <?php
 
-$page = 'products';
-$title = 'Termékek - MarketPlace';
-$content = 'Termékek';
-
 include("connection.php");
 error_reporting(0);
 

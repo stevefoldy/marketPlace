@@ -14,12 +14,10 @@
                     <div class="col-10 mp-column-right px-5 pt-4 pb-5">
                         <div class="mp-page-content">
                             <div class="mp-page-head">
-                                <h2 class="mp-page-title"><?php echo $content; ?></h2>
+                                <h2 class="mp-page-title"><?php echo $contentTitle; ?></h2>
                             </div>
                             <?php
-                                if($page == 'products') {
-                                    include 'product_table.php';
-                                }
+                                echo ($content);
                             ?>
                         </div>
                     </div>

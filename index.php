@@ -1,8 +1,13 @@
 <?php
 
-$page = 'products';
+$page = 'home';
 $title = 'Admin - MarketPlace';
-$content = 'Köszöntelek a Market Placen!';
+$contentTitle = 'Köszöntelek a Market Placen!';
+
+ob_start();
+echo "Hello steve";
+$content = ob_get_contents();
+ob_end_clean();
 
 include 'template.php';
 
