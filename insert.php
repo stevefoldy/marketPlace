@@ -2,14 +2,45 @@
 include("connection.php");
 error_reporting(0);
 ?>
-<form action="" method="GET">
-    Termék: <input type="text" name="productName" value="" required></br>
-    Termék leírása: <input type="text" name="productDesc" value="" required></br>
-    Bruttó ár: <input type="text" name="grossPrice" value="" required></br>
-    Cikkszám: <input type="text" name="sku" value="" required></br>
-    Mennyiség: <input type="text" name="quantitySum" value="" required></br>
-    <input type="submit" name="submit" value="Mentés">
-</form>
+<div class="row">
+    <div class="col-6">
+        <form action="" method="GET">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold" id="productNameId">Termék neve:</span>
+                </div>
+                <input type="text" name="productName" value="" class="form-control" aria-describedby="productNameId" required>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold" id="productDescId">Termék leírása:</span>
+                </div>
+                <textarea type="text" name="productDesc" value="" class="form-control" aria-describedby="productDescId" required></textarea>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold" id="productGrossPriceId">Bruttó ár:</span>
+                </div>
+                <input type="text" name="grossPrice" value="" class="form-control" aria-describedby="productGrossPriceId" required>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold" id="productSkuId">Cikkszám:</span>
+                </div>
+                <input type="text" name="sku" value="" class="form-control" aria-describedby="productSkuId" required>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text font-weight-bold" id="productQuantitySumId">Mennyiség:</span>
+                </div>
+                <input type="text" name="quantitySum" value="" class="form-control" aria-describedby="productQuantitySumId" required>
+            </div>
+            <div class="d-flex justify-content-end mb-3">
+                <input type="submit" class="btn btn-primary" name="submit" value="Mentés">
+            </div>
+        </form>
+    </div>
+</div>
 <?php
 if ($_GET['submit']) {
     $productName = $_GET['productName'];
@@ -25,9 +56,19 @@ if ($_GET['submit']) {
             ?>
             <META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://marketplace.steve/index.php">
             <?php
-            echo "Az adatrögzítés megtörtént!";
+            echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                  A terméked feltöltése sikeresen megtörtént!
+                  <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>×</span>
+                  </button>
+                </div>";
         } else {
-            echo "Nem vehetsz fel terméket azonos cikkszámmal!";
+            echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                  Nem vehetsz fel terméket azonos cikkszámmal!
+                  <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <span aria-hidden='true'>×</span>
+                  </button>
+                </div>";
         }
     }
 }

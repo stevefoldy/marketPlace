@@ -32,14 +32,14 @@ if ($total != 0){
             while ($result = mysqli_fetch_assoc($data)) {
                 echo "<div class='row mp-table-tr'>
                 <div class='col-auto mp-table-td' style='max-width: 40px'>" . $result['id'] . "</div>
-                <div class='col-auto mp-table-td font-weight-bold'><a href='update.php?id=$result[id]&productName=$result[productname]&productDesc=$result[productDesc]&grossPrice=$result[grossPrice]&sku=$result[sku]&quantitySum=$result[quantitySum]'>" . $result['productName'] . "</a></div>
+                <div class='col-auto mp-table-td font-weight-bold'><a href='update.php?id=$result[id]&productName=$result[productName]&productDesc=$result[productDesc]&grossPrice=$result[grossPrice]&sku=$result[sku]&quantitySum=$result[quantitySum]'>" . $result['productName'] . "</a></div>
                 <div class='col-auto mp-table-td text-truncate' style='max-width: 400px'>" . $result['productDesc'] . "</div>
                 <div class='col-auto mp-table-td text-right font-weight-bold'>" . $result['grossPrice'] . " Ft</div>
                 <div class='col-auto mp-table-td text-right'>" . $result['sku'] . "</div>
                 <div class='col-auto mp-table-td text-right'>" . $result['quantitySum'] . "</div>
                 <div class='col-auto mp-table-td text-right'>
                     <div class='mp-actions-box'>
-                        <a class='ms-action ms-update animated' href='update.php?id=$result[id]&productName=$result[productname]&productDesc=$result[productDesc]&grossPrice=$result[grossPrice]&sku=$result[sku]&quantitySum=$result[quantitySum]' title='Módosítás'><i class='far fa-edit'></i></a>
+                        <a class='ms-action ms-update animated' href='update.php?id=$result[id]&productName=$result[productName]&productDesc=$result[productDesc]&grossPrice=$result[grossPrice]&sku=$result[sku]&quantitySum=$result[quantitySum]' title='Módosítás'><i class='far fa-edit'></i></a>
                         <a class='ms-action ms-delete animated' href='delete.php?id=$result[id]'onclick='return checkdelete()' title='Törlés'><i class='far fa-trash-alt'></i></a>
                     </div>
                 </div>

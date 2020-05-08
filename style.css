@@ -1,6 +1,9 @@
+@import 'inputs.css';
+
 :root {
     --primary-color: #7954ea;
     --dark-primary-color: #514193; ;
+    --light-primary-color: #AF98F2;
 }
 
 html {
@@ -182,7 +185,7 @@ a:hover {
 .mp-menu li a:hover {
     background: rgba(121,84,234,.05);
     text-decoration: none;
-    color: #AF98F2;
+    color: var(--light-primary-color);
 }
 
 .mp-menu-item-link .fas {
@@ -191,7 +194,7 @@ a:hover {
 }
 
 .mp-menu-item-link:hover .fas {
-    color: #AF98F2;
+    color: var(--light-primary-color);
 }
 
 .mp-menu-item-link.active .fas {
@@ -199,7 +202,7 @@ a:hover {
 }
 
 .mp-menu-item-link.active:hover .fas {
-    color: #AF98F2;
+    color: var(--light-primary-color);
 }
 
 /* /nav */
@@ -285,6 +288,7 @@ div.mp-page-head {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
+    box-shadow: var(--p-card-shadow,0 0 0 1px rgba(63,63,68,.05),0 1px 3px 0 rgba(63,63,68,.15));
 }
 
 .mp-table-th {

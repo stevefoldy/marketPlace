@@ -1,0 +1,21 @@
+.form-control {
+    border: 1px solid transparent;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: var(--light-primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(121,84,234,.2);
+}
+
+.input-group-text {
+    min-width: 150px;
+    background-color: #efeafc;
+    border: 1px solid transparent;
+}
+
+.input-group {
+    box-shadow: var(--p-card-shadow,0 0 0 1px rgba(63,63,68,.05),0 1px 3px 0 rgba(63,63,68,.15));
+}
