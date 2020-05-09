@@ -5,7 +5,7 @@ $title = 'Admin - MarketPlace';
 $contentTitle = 'Köszöntelek a Market Placen!';
 
 ob_start();
-echo "Hello steve";
+include 'main_page.php';
 $content = ob_get_contents();
 ob_end_clean();
 

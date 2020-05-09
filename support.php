@@ -5,7 +5,7 @@ $title = 'Termékek - MarketPlace';
 $contentTitle = 'Segítség';
 
 ob_start();
-echo "Ez a support oldal!";
+include "support_page.php";
 $content = ob_get_contents();
 ob_end_clean();
 
