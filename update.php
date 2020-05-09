@@ -2,7 +2,11 @@
 
 $page = 'products';
 $title = 'Termékek szerkesztése - MarketPlace';
-$contentTitle = 'Termék módosítása';
+
+$contentModText = '<span>Termék módosítása</span>﻿';
+$contentProductName = $_GET['productName'];
+
+$contentTitle = $contentModText . ' - ' . $contentProductName;
 
 ob_start();
 include 'update_item.php';
