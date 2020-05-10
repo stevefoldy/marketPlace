@@ -1,4 +1,4 @@
-﻿﻿<?php
+﻿<?php
 
 $page = 'products';
 $title = 'Termékek szerkesztése - MarketPlace';

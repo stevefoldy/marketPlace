@@ -1,10 +1,8 @@
-﻿﻿<?php
-
+﻿<?php
 $page = 'products';
 $title = 'Termékek hozzáadása - MarketPlace';
 
 $contentModText = '<span>Termék hozzáadása</span>﻿';
-
 $contentTitle = $contentModText;
 
 ob_start();

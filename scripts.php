@@ -26,4 +26,17 @@
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
+
+    /* loader */
+    var myLoader;
+
+    function mpLoader() {
+        myLoader = setTimeout(showPage, 1000);
+    }
+
+    function showPage() {
+        document.getElementById("mp-loader").style.display = "none";
+        document.getElementById("mpMain").style.opacity = "1";
+        document.getElementsByTagName("BODY")[0].style.height = "auto";
+    }
 </script>

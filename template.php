@@ -1,11 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
     <head>
         <?php include 'components/pagehead.php'; ?>
     </head>
-    <body>
+    <body onload="mpLoader()" style="height: 100vh">
+        <div id="mp-loader">
+            <div class="mp-loader-icon"></div>
+            <div class="mp-loader-icon-sm"></div>
+        </div>
         <?php include 'components/header.php'; ?>
-        <main>
+        <main style="opacity: 0" id="mpMain">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-2 mp-column-left">

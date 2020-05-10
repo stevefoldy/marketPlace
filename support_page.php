@@ -2,7 +2,7 @@
     <div class="col-1"></div>
     <div class="col-3 d-flex justify-content-center flex-column" style="margin-right: -95px; margin-left: 100px;">
         <h3 class="mb-3 font-weight-bold">
-            Ha kérdésed van tedd fel nekünk!
+            Ha kérdésed van, tedd fel nekünk!
         </h3>
         <p>
             Munkatársaink azonnali segítséget nyújtanak neked, ha bármilyen kérdésed merülne fel a MarketPlace használatával kapcsolatosan.

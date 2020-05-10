@@ -1,5 +1,6 @@
 <?php
 
+include 'template.php';
 include ("connection.php");
 error_reporting(0);
 
@@ -14,7 +15,7 @@ if($data) {
             alert('A termék sikeresen törölve lett!')
         </script>";
     ?>
-    <META HTTP-EQUIV="Refresh" CONTENT="0; URL=http://marketplace.steve/index.php">
+    <META HTTP-EQUIV="Refresh" CONTENT="0; URL=/products.php">
     <?php
 } else {
     echo "<div class='alert alert-danger' role='alert'>Sajnos a rekordot nem sikerült törölni!</div>";
