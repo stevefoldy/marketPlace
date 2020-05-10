@@ -10,7 +10,7 @@
         <a href="products.php" class="btn btn-primary btn-lg w-50 mt-2">Feltöltöm</a>
     </div>
     <div class="col-6">
-        <img src="assets/strategy2.svg" alt="">
+        <img src="assets/img/strategy2.svg" alt="">
     </div>
     <div class="col-2"></div>
 </div>

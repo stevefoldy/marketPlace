@@ -61,44 +61,10 @@ $_GET['quantitySum'];
                     Mező kitöltése kötelező
                 </div>
             </div>
-            <div class="d-flex justify-content-end mb-3">
+            <div class="d-flex justify-content-end align-items-center mb-3">
+                <?php include "update_item_submit.php"?>
                 <input class="btn btn-primary" type="submit" name="submit" value="Mentés és szerkeszt">
             </div>
         </form>
     </div>
 </div>
-
-<?php
-if ($_GET['submit']) // ha megtörtént a gombnyomás, átvesszük az értékeket és betöltjük az adabázisba (frissítés)
-{
-    $id = $_GET['id'];
-    $productName = $_GET['productName'];
-    $productDesc = $_GET['productDesc'];
-    $grossPrice = $_GET['grossPrice'];
-    $sku = $_GET['sku'];
-    $quantitySum = $_GET['quantitySum'];
-
-    $query = "UPDATE PRODUCT SET PRODUCTNAME='$productName' , PRODUCTDESC='$productDesc' , GROSSPRICE='$grossPrice', SKU='$sku', QUANTITYSUM='$quantitySum' WHERE id='$id'";
-    $data = mysqli_query($conn, $query); //kapcsolat illetve hová,mit
-
-    if ($data) {
-        echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
-                 <font color='green'>Termék frissítve! <a href=products.php>Nézd meg a feltöltött termékeket!</a>
-                  <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>×</span>
-                  </button>
-                </div>
-                ";
-    }
-    else
-    {
-        echo "<font color='red'>Termék feltöltése sikertlen! <a href=products.php>Nézd meg a listát</a>";
-    }
-
-}
-else
-{
-    echo "<font color='blue'>Nyomj a Frissítés gombra a változtatások mentéséhez";
-}
-
-?>

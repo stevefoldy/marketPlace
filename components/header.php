@@ -2,7 +2,7 @@
     <div class="row mp-header-row">
         <div class="col-4 mp-header-left">
             <a href="index.php" class="mp-brand">
-                <img class="mp-brand-logo" src="assets/mp-light-logo.svg" width="150" alt="Market Place">
+                <img class="mp-brand-logo" src="assets/img/mp-light-logo.svg" width="150" alt="Market Place">
             </a>
             <span class="mp-admin-text ml-4">
                     Admin

@@ -141,7 +141,7 @@ a:hover {
     opacity: .2;
     width: 200px;
     height: 182px;
-    background: url('assets/mp-icon.svg') top left no-repeat;
+    background: url('../img/mp-icon.svg') top left no-repeat;
     left: 0;
     right: 0;
     margin: auto;
