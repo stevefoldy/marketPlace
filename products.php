@@ -5,7 +5,7 @@ $title = 'Termékek - MarketPlace';
 $contentTitle = 'Termékek';
 
 ob_start();
-include 'product_table.php';
+include 'pages/tables/product_table.php';
 $content = ob_get_contents();
 ob_end_clean();
 

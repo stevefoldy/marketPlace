@@ -7,10 +7,10 @@
         <p>
             Egy pár kattintással másodperceken belül fel is tudod tölteni a termékeidet a <strong>MarketPalcedbe</strong>.
         </p>
-        <a href="products.php" class="btn btn-primary btn-lg w-50 mt-2">Feltöltöm</a>
+        <a href="../../products.php" class="btn btn-primary btn-lg w-50 mt-2">Feltöltöm</a>
     </div>
     <div class="col-6">
-        <img src="assets/img/strategy2.svg" alt="">
+        <img src="../../assets/img/strategy2.svg" alt="">
     </div>
     <div class="col-2"></div>
 </div>

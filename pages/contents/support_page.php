@@ -10,7 +10,7 @@
         <a href="mailto:istvanfoldy@gmail.com" class="btn btn-primary btn-lg w-50 mt-2">Írj nekünk emailt!</a>
     </div>
     <div class="col-6">
-        <img src="assets/img/contact-us-3.svg" alt="">
+        <img src="../../assets/img/contact-us-3.svg" alt="">
     </div>
     <div class="col-2"></div>
 </div>

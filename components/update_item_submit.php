@@ -13,7 +13,7 @@
 
         if ($data) {
             echo "<div class='alert alert-success alert-dismissible fade show mb-0 mr-4' role='alert'>
-                     <div color='green'>Termék frissítve! <a href=products.php>Nézd meg az eddig feltöltött termékeket!</a></div>
+                     <div color='green'>Termék frissítve! <a href=../products.php>Nézd meg az eddig feltöltött termékeket!</a></div>
                       <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>×</span>
                       </button>
@@ -23,7 +23,7 @@
         else
         {
             echo "<div class='alert alert-danger alert-dismissible fade show mb-0 mr-4' role='alert'>
-                     <div color='red'>Termék frissítése feltöltése sikertlen! <a href=products.php>Nézd meg az eddig feltöltött termékeket!</a></div>
+                     <div color='red'>Termék frissítése feltöltése sikertlen! <a href=../products.php>Nézd meg az eddig feltöltött termékeket!</a></div>
                       <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>×</span>
                       </button>

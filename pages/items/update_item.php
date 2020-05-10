@@ -62,7 +62,7 @@ $_GET['quantitySum'];
                 </div>
             </div>
             <div class="d-flex justify-content-end align-items-center mb-3">
-                <?php include "update_item_submit.php"?>
+                <?php include "components/update_item_submit.php" ?>
                 <input class="btn btn-primary" type="submit" name="submit" value="Mentés és szerkeszt">
             </div>
         </form>

@@ -1,7 +1,7 @@
 <?php
 
 include 'template.php';
-include ("connection.php");
+include 'connection.php';
 error_reporting(0);
 
 $id = $_GET['id'];
