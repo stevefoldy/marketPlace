@@ -34,3 +34,27 @@
 textarea.form-control.is-invalid {
     background-position: top calc(50%) right calc(.375em + .1875rem);
 }
+
+@media screen and (max-width: 991px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group-append, .input-group-prepend {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .input-group-text {
+        width: 100%;
+    }
+
+    .mp-form-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mp-form-col {
+        padding: 0;
+    }
+}

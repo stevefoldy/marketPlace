@@ -39,4 +39,20 @@
         document.getElementById("mpMain").style.opacity = "1";
         document.getElementsByTagName("BODY")[0].style.height = "auto";
     }
+
+    /* hamburger menu */
+    $(document).ready(function(){
+        var $mobileHamburgerBtn = $('#mp-mobile-hamburger');
+        var $mobileMenuWrap = $('.mp-menu-wrap');
+
+        $mobileHamburgerBtn.on('click',function(){
+            $mobileMenuWrap.addClass('show');
+            $('html, .mp-mobile-overlay').addClass('js-is-visible');
+        });
+
+        $('.mp-menu-wrap-close').on('click',function(){
+            $mobileMenuWrap.removeClass('show');
+            $('html, .mp-mobile-overlay').removeClass('js-is-visible');
+        });
+    });
 </script>

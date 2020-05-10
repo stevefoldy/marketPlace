@@ -12,10 +12,12 @@
         <main style="opacity: 0" id="mpMain">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-2 mp-column-left">
+                    <div class="mp-mobile-overlay d-lg-none"></div>
+                    <div class="col-12 col-lg-2 mp-column-left mp-menu-wrap">
+                        <div class="mp-menu-wrap-close d-lg-none"><i class="fas fa-times"></i></div>
                         <?php include 'components/navbar.php'; ?>
                     </div>
-                    <div class="col-10 mp-column-right px-5 pt-4 pb-5">
+                    <div class="col-12 col-lg-10 mp-column-right px-4 px-lg-5 pt-4 pb-5">
                         <div class="mp-page-content">
                             <div class="mp-page-head">
                                 <h2 class="mp-page-title"><?php echo $contentTitle; ?></h2>

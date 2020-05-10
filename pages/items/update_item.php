@@ -10,8 +10,8 @@ $_GET['sku'];
 $_GET['quantitySum'];
 ?>
 
-<div class="row mt-4">
-    <div class="col-6">
+<div class="row mp-form-wrapper">
+    <div class="col-12 col-lg-6 mp-form-col">
         <form action="" class="mp-needs-validation" method="GET" novalidate>
             <div class="mb-0">
                 <input name="id" value="<?php echo $_GET['id']; ?>" class="form-control" aria-describedby="productId" type="hidden">

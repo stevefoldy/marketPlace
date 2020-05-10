@@ -2,8 +2,8 @@
 include("connection.php");
 error_reporting(0);
 ?>
-<div class="row">
-    <div class="col-6">
+<div class="row mp-form-wrapper">
+    <div class="col-12 col-lg-6 mp-form-col">
         <form class="mp-needs-validation" action="" method="GET" novalidate>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
