@@ -27,9 +27,9 @@ $_GET['quantitySum'];
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text font-weight-bold" id="productDescId">Termék leírása:</span>
+                    <span class="input-group-text font-weight-bold align-items-start" id="productDescId">Termék leírása:</span>
                 </div>
-                <textarea type="text" name="productDesc" value="<?php echo $_GET['productDesc']; ?>" class="form-control" aria-describedby="productDescId" required><?php echo $_GET['productDesc']; ?></textarea>
+                <textarea type="text" name="productDesc" value="<?php echo $_GET['productDesc']; ?>" class="form-control mp-product-textarea" aria-describedby="productDescId" required><?php echo $_GET['productDesc']; ?></textarea>
                 <div class="invalid-feedback">
                     Mező kitöltése kötelező
                 </div>
@@ -61,9 +61,13 @@ $_GET['quantitySum'];
                     Mező kitöltése kötelező
                 </div>
             </div>
-            <div class="d-flex justify-content-end align-items-center mb-3">
-                <?php include "components/update_item_submit.php" ?>
-                <input class="btn btn-primary" type="submit" name="submit" value="Mentés és szerkeszt">
+            <div class="d-flex justify-content-end align-items-center mb-3 row">
+                <div class="col-auto d-flex justify-content-end">
+                    <?php include "components/update_item_submit.php" ?>
+                </div>
+                <div class="col-auto d-flex justify-content-end">
+                    <input class="btn btn-primary" type="submit" name="submit" value="Mentés és szerkeszt">
+                </div>
             </div>
         </form>
     </div>

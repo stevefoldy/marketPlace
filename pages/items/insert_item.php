@@ -16,9 +16,9 @@ error_reporting(0);
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text font-weight-bold" id="productDescId">Termék leírása:</span>
+                    <span class="input-group-text font-weight-bold align-items-start" id="productDescId">Termék leírása:</span>
                 </div>
-                <textarea type="text" name="productDesc" value="" class="form-control" aria-describedby="productDescId" required></textarea>
+                <textarea type="text" name="productDesc" value="" class="form-control mp-product-textarea" aria-describedby="productDescId" required></textarea>
                 <div class="invalid-feedback">
                     Mező kitöltése kötelező
                 </div>
@@ -50,42 +50,15 @@ error_reporting(0);
                     Mező kitöltése kötelező
                 </div>
             </div>
-            <div class="d-flex justify-content-end mb-3">
-                <input type="submit" class="btn btn-primary" name="submit" value="Mentés">
+            <div class="d-flex justify-content-end align-items-center mb-3 row">
+                <div class="col-auto d-flex justify-content-end">
+                    <?php include "components/insert_item_submit.php" ?>
+                </div>
+                <div class="col-auto d-flex justify-content-end">
+                 <input type="submit" class="btn btn-primary" name="submit" value="Mentés">
+                </div>
             </div>
         </form>
     </div>
 </div>
-<?php
-if ($_GET['submit']) {
-    $productName = $_GET['productName'];
-    $productDesc = $_GET['productDesc'];
-    $grossPrice = $_GET['grossPrice'];
-    $sku = $_GET['sku'];
-    $quantitySum = $_GET['quantitySum'];
-
-    if ($productName != "" && $productDesc != "" && $grossPrice != "" && $sku != "" && $quantitySum != "") {
-        $query = "INSERT INTO PRODUCT (id, productName, productDesc, grossPrice, sku, quantitySum) VALUES ('Null','$productName', '$productDesc', '$grossPrice', '$sku', '$quantitySum')";
-        $data = mysqli_query($conn, $query);
-        if ($data) {
-            ?>
-            <META HTTP-EQUIV="Refresh" CONTENT="0; URL=/products.php">
-            <?php
-            echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
-                  A terméked feltöltése sikeresen megtörtént!
-                  <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>×</span>
-                  </button>
-                </div>";
-        } else {
-            echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
-                  Nem vehetsz fel terméket azonos cikkszámmal!
-                  <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                    <span aria-hidden='true'>×</span>
-                  </button>
-                </div>";
-        }
-    }
-}
-?>
 
